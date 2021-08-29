@@ -1,0 +1,343 @@
+{
+  "products": {
+    "1": {
+      "category": "western-wear",
+      "sub-category": "jackets&coats",
+      "brand-detail": { "name": "NIKE", "link": "/" },
+      "brand": "NIKE",
+      "description": "Dri-Fit Zip-Front Bomber Jacket with Insert Pockets",
+      "price": "2995",
+      "adult": true,
+      "gender": "men",
+      "discount": 20,
+      "colors": {
+        "black": {
+          "color-code": "#39383f",
+          "stock": {
+            "s": 100,
+            "m": 0,
+            "l": 100,
+            "xl": 100,
+            "xxl": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210218/1rkz/602d62b47cdb8c1f1442a76f/-1117Wx1400H-460825106-black-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210218/pI4j/602d63297cdb8c1f1442a877/-1117Wx1400H-460825106-black-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210218/fsDa/602d7754f997dd5c40f2faf9/-1117Wx1400H-460825106-black-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210218/MhBY/602d68c5f997dd5c40f2d1ec/-1117Wx1400H-460825106-black-MODEL4.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Dri-FIT Jacket combines lightweight knit fabric with sweat-wicking technology to help keep you comfortably covered before, during or after your workout.",
+          "Regular Fit",
+          "Machine wash cold",
+          "Product Code: 460825106001"
+        ],
+        "marketed by": "Nike India Pvt Ltd, No.66/1, Ground & 1st Floor, Olympia Building, Bagmane Tech Park, C V Raman Nagar, Bangalore - 560093",
+        "imported by": "Nike India Pvt Ltd, No.66/1, Ground & 1st Floor, Olympia Building, Bagmane Tech Park, C V Raman Nagar, Bangalore - 560093",
+        "country of origin": "Thailand"
+      },
+      "more-info": {
+        "sleeve": "full-length",
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      }
+    },
+
+    "2": {
+      "category": "western-wear",
+      "sub-category": "jackets&coats",
+      "brand-detail": { "name": "French Connection", "link": "/" },
+      "brand": "French Connection",
+      "description": "Colourblock Reversible Gilet with Insert Pockets",
+      "price": "4499",
+      "adult": true,
+      "gender": "men",
+      "discount": 56,
+      "colors": {
+        "red": {
+          "color-code": "#f54f4c",
+          "stock": {
+            "s": 100,
+            "m": 100,
+            "l": 0,
+            "xl": 100,
+            "xxl": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210108/vA07/5ff76a6a7cdb8c1f1421032b/-1117Wx1400H-460812227-red-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210108/VvsS/5ff7679c7cdb8c1f1420fba5/-1117Wx1400H-460812227-red-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210108/qTk8/5ff77802f997dd5c40d00015/-1117Wx1400H-460812227-red-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210108/dIsM/5ff774feaeb2696981477cb7/-1117Wx1400H-460812227-red-MODEL4.jpg"
+          ]
+        },
+        "blue": {
+          "color-code": "#313440",
+          "stock": {
+            "s": 100,
+            "m": 100,
+            "l": 100,
+            "xl": 100,
+            "xxl": 0
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210108/SQzq/5ff75d4f7cdb8c1f1420e0e5/-1117Wx1400H-460812227-blue-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210108/MCjl/5ff754db7cdb8c1f1420cb53/-1117Wx1400H-460812227-blue-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210108/m6pi/5ff7700e7cdb8c1f142112b3/-1117Wx1400H-460812227-blue-MODEL4.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Regular Fit",
+          "Machine wash cold",
+          "Padded & Quilted",
+          "100% polyester",
+          "Product Code: 460812227006"
+        ],
+        "marketed by": "BMI Wholesale Trading Private Ltd., Office no. 17 & 18, 10th Floor, A wing, Pinnaacle Corporate Park, G Block,Bandra Kurla Complex, Bandra East,Mumbai - 400 051.",
+        "imported by": "BMI Wholesale Trading Private Ltd., Office no. 17 & 18, 10th Floor, A wing, Pinnaacle Corporate Park, G Block,Bandra Kurla Complex, Bandra East,Mumbai - 400 051.",
+        "country of origin": "India"
+      },
+      "more-info": {
+        "sleeve": "full-length",
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      }
+    },
+
+    "3": {
+      "category": "footwear",
+      "sub-category": "casual-shoes",
+      "brand-detail": { "name": "Puma", "link": "/" },
+      "brand": "Puma",
+      "description": "Pacer Max V1 IDP Sports Shoes",
+      "price": "4499",
+      "adult": true,
+      "gender": "men",
+      "discount": 55,
+      "colors": {
+        "grey": {
+          "color-code": "#abaaad",
+          "stock": {
+            "6": 100,
+            "7": 0,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210627/o9ub/60d77ebcf997ddb312f3a27b/-1117Wx1400H-460848504-grey-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210627/YFsV/60d78115f997ddb312f3ac3c/-1117Wx1400H-460848504-grey-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210627/Hmbo/60d7801daeb269a9e3111e34/-1117Wx1400H-460848504-grey-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210627/p0ml/60d77730aeb269a9e31100f2/-1117Wx1400H-460848504-grey-MODEL4.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210627/9HTt/60d77b6df997ddb312f39536/-1117Wx1400H-460848504-grey-MODEL5.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Product color may slightly vary due to photographic lighting sources or your monitor settings.",
+          "Solid Color Dupatta",
+          "Symmetric Hemline",
+          "Dry clean",
+          "Viscose Rayon",
+          "Product Code: 460825106001"
+        ],
+        "marketed by": "PUMA India PVT LTD #509, CMH Road, Indiranagar Bangalore - 560038. India",
+        "manufactured by": "SSIPLRETAILLIMITED(UNIT-III), SSIPLRETAILLIMITED(UNIT-III), VILL-MEHRUWALA,PO-BHAGANI,, PAONTASAHIB, India, Postal code, 173025",
+        "country of origin": "India"
+      },
+
+      "more-info": {
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      }
+    },
+    "4": {
+      "category": "ethnic&festive",
+      "sub-category": "kurtas&shirts",
+      "brand-detail": { "name": "DEYANN", "link": "/" },
+      "brand": "DEYANN",
+      "description": "Full Sleeves Kurta Pyjama with Dupatta",
+      "price": "3990",
+      "adult": true,
+      "gender": "men",
+      "discount": 56,
+      "colors": {
+        "red": {
+          "color-code": "#8a1d27",
+          "stock": {
+            "s": 100,
+            "m": 0,
+            "l": 100,
+            "xl": 100,
+            "xxl": 100,
+            "3xl": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210628/NsGz/60da1133aeb269a9e32b9eaf/-1117Wx1400H-461919997-red-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210628/soh7/60da1133aeb269a9e32b9e97/-1117Wx1400H-461919997-red-MODEL4.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210628/QmB8/60da1133aeb269a9e32b9ead/-1117Wx1400H-461919997-red-MODEL5.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210628/WtvK/60da1133aeb269a9e32b9e89/-1117Wx1400H-461919997-red-MODEL6.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Product color may slightly vary due to photographic lighting sources or your monitor settings.",
+          "Solid Color Dupatta",
+          "Symmetric Hemline",
+          "Dry clean",
+          "Viscose Rayon",
+          "Product Code: 460825106001"
+        ],
+        "marketed by": "Dhanalaxmi Fashions (Srijan Industrial Logistic Park, Part - A, Block - B, Unit No. 5, 3rd Floor, Near Saraswati Bridge, Mouza Mahiari, Howrah - 711 302)",
+        "manufactured by": "Dhanalaxmi Fashions (Srijan Industrial Logistic Park, Part - A, Block - B, Unit No. 5, 3rd Floor, Near Saraswati Bridge, Mouza Mahiari, Howrah - 711",
+        "country of origin": "India"
+      },
+      "more-info": {
+        "sleeve": "full-length",
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      },
+      "marketed by": "Dhanalaxmi Fashions (Srijan Industrial Logistic Park, Part - A, Block - B, Unit No. 5, 3rd Floor, Near Saraswati Bridge, Mouza Mahiari, Howrah - 711 302)",
+      "imported by": "Dhanalaxmi Fashions (Srijan Industrial Logistic Park, Part - A, Block - B, Unit No. 5, 3rd Floor, Near Saraswati Bridge, Mouza Mahiari, Howrah - 711 302)",
+      "country of origin": "India"
+    },
+    "5": {
+      "category": "western-wear",
+      "sub-category": "shirts",
+      "brand-detail": { "name": "NETPLAY", "link": "/" },
+      "brand": "NETPLAY",
+      "description": "Oxford Shirt With Button-Down Collar",
+      "price": "999",
+      "adult": true,
+      "gender": "men",
+      "discount": 20,
+      "colors": {
+        "green": {
+          "color-code": "#b2c6ad",
+          "stock": {
+            "s": 100,
+            "m": 0,
+            "l": 100,
+            "xl": 100,
+            "xxl": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/h5f/h8a/12741570986014/-1117Wx1400H-440946631-green-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/h74/hdf/12741568888862/-1117Wx1400H-440946631-green-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/hd0/hab/12741569413150/-1117Wx1400H-440946631-green-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/h61/h01/12741568626718/-1117Wx1400H-440946631-green-MODEL4.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/hf3/h2f/12741569675294/-1117Wx1400H-440946631-green-MODEL5.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/he1/h22/12741569151006/-1117Wx1400H-440946631-green-MODEL6.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Button-down collar",
+          "Curved hemline",
+          "Single-button rounded cuffs",
+          "Slim Fit",
+          "Machine wash",
+          "100% Cotton",
+          "Product Code: 440946631043"
+        ],
+        "imported by": "Reliance Retail Limited Shed No-77/80, Indian Corporation Godown Mankoli Naka, Village Dapode Taluka, Bhiwandi Dist. Thane Maharashtra PIN-421302",
+        "manufactured by": "Reliance Retail Limited Shed No-77/80, Indian Corporation Godown Mankoli Naka, Village Dapode Taluka, Bhiwandi Dist. Thane Maharashtra PIN-421302",
+        "country of origin": "India"
+      },
+      "more-info": {
+        "sleeve": "full-length",
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      }
+    },
+    "6": {
+      "category": "footwear",
+      "sub-category": "formal-shoes",
+      "brand-detail": { "name": "Mactree", "link": "/" },
+      "brand": "Mactree",
+      "description": "Formal Slip-On Shoes",
+      "price": "1898",
+      "adult": true,
+      "gender": "men",
+      "discount": 69,
+      "colors": {
+        "brown": {
+          "color-code": "#402c26",
+          "stock": {
+            "6": 100,
+            "7": 0,
+            "8": 100,
+            "9": 100,
+            "10": 100,
+            "11": 100
+          },
+          "images": [
+            "https://assets.ajio.com/medias/sys_master/root/20210413/nw3E/6074b88df997dd7b64aea62e/-1117Wx1400H-462268764-brown-MODEL.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/rwMl/6074b88df997dd7b64aea65d/-1117Wx1400H-462268764-brown-MODEL2.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/CCHs/6074b88df997dd7b64aea656/-1117Wx1400H-462268764-brown-MODEL3.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/dgcP/6074b88df997dd7b64aea672/-1117Wx1400H-462268764-brown-MODEL4.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/0lpG/6074b88df997dd7b64aea66e/-1117Wx1400H-462268764-brown-MODEL5.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/ILwM/6074b88df997dd7b64aea66f/-1117Wx1400H-462268764-brown-MODEL6.jpg",
+            "https://assets.ajio.com/medias/sys_master/root/20210413/dRzS/6074b88df997dd7b64aea65e/-1117Wx1400H-462268764-brown-MODEL7.jpg"
+          ]
+        }
+      },
+      "product-details": {
+        "common-details": [
+          "Wipe with a clean, dry cloth when needed",
+          "PU insole",
+          "Slip-on Styling",
+          "PU upper",
+          "Rubber sole",
+          "Product Code: 462268764002"
+        ],
+        "marketed by": "Maxwel International-18/2 Shoe Market,Sanjay Place ,Agra 282002",
+        "manufactured by": "Maxwel International-18/2 Shoe Market,Sanjay Place ,Agra 282002",
+        "country of origin": "India"
+      },
+
+      "more-info": {
+        "pattern": "",
+        "feature": "",
+        "sport": "",
+        "character": "",
+        "collar": "",
+        "shape": "",
+        "fabric": ""
+      }
+    }
+  }
+}

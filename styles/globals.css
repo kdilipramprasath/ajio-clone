@@ -1,16 +1,96 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show-block {
+  display: block;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.on-hover-bold:hover a.ohb {
+  font-weight: bold;
 }
 
-* {
+.text-primary {
+  color: #2f4254;
+}
+
+.bg-primary {
+  background-color: #2f4254;
+}
+
+.text-ajio-yellow {
+  color: #d5a249;
+}
+
+.bg-ajio-yellow {
+  background-color: #d5a249;
+}
+
+.border-ajio-yellow {
+  border-color: #d5a249;
+}
+
+.product-detail:hover {
+  background-color: #d5a249;
+}
+
+.add-to-bag {
+padding: .7rem 0;
+}
+
+.inner-border {
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  opacity: 0;
+}
+
+.inner-border:hover {
+  opacity: 100;
+}
+
+/* Custom Radio Button */
+
+.custom-radio-button {
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+
+.custom-radio-button input {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.custom-radio-button .outer-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.custom-radio-button .outer-radio .inner-radio {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.custom-radio-button input:checked ~ .outer-radio {
+  border: 1px solid rgb(68, 68, 68);
+}
+
+.text-xss {
+  font-size: .7rem;
 }

@@ -1,0 +1,975 @@
+{
+  "men": {
+    "categories": [
+      {
+        "title": "new in: clothing",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: footwear & accs",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "international brands",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "western wear",
+        "link": "/men/western-wear",
+        "links": [
+          {
+            "title": "Jackets & Coats",
+            "link": "/men/western-wear?sub-category=jackets%26coats"
+          },
+          { "title": "Jeans", "link": "/" },
+          {
+            "title": "Shirts",
+            "link": "/men/western-wear?sub-category=shirts"
+          },
+          { "title": "Shorts & 3/4ths", "link": "/" },
+          { "title": "Sweatshirts & Hoodies", "link": "/" },
+          { "title": "Track Pants", "link": "/" },
+          { "title": "Trousers & Pants", "link": "/" },
+          { "title": "T-Shirts", "link": "/" }
+        ]
+      },
+
+      {
+        "hot": "true",
+        "title": "ethnic & festive",
+        "link": "/men/ethnic&festive",
+        "links": [
+          {
+            "title": "Kurtas & Shirts",
+            "link": "/men/ethnic%26festive?sub-category=kurtas%26shirts"
+          },
+          { "title": "Nehru Jackets", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "footwear",
+        "link": "/men/footwear",
+        "links": [
+          {
+            "title": "Casual Shoes",
+            "link": "/men/footwear?sub-category=casual-shoes"
+          },
+          { "title": "Flip-Flops & Slippers", "link": "/" },
+          {
+            "title": "Formal Shoes",
+            "link": "/men/footwear?sub-category=formal-shoes"
+          },
+          { "title": "Sandals", "link": "/" },
+          { "title": "Sneakers", "link": "/" },
+          { "title": "Sports Shoes", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "night & loungewear",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "innerwear",
+        "link": "/",
+        "links": [
+          { "title": "Briefs", "link": "/" },
+          { "title": "Trunks & Boxers", "link": "/" },
+          { "title": "Vests", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "accessories",
+        "link": "/",
+        "links": [
+          { "title": "Backpacks", "link": "/" },
+          { "title": "Bags & Wallets", "link": "/" },
+          { "title": "Belts", "link": "/" },
+          { "title": "Caps & Hats", "link": "/" },
+          { "title": "Fashion Accessories", "link": "/" },
+          { "title": "Socks", "link": "/" },
+          { "title": "Sunglasses & Frames", "link": "/" },
+          { "title": "Wallets", "link": "/" },
+          { "title": "Watches", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "winterwear",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "precious jewellery",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "home & kitchen",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "new": "true",
+        "title": "Grooming",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "featured",
+        "link": "/",
+        "links": [
+          { "title": "Bags Under 1499", "link": "/" },
+          { "title": "Footwear Under 1499", "link": "/" },
+          { "title": "Jeans Under 1199", "link": "/" },
+          { "title": "Shorts & 3/4ths Under 699", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "#ajiorecommends",
+        "link": "/",
+        "links": [{ "title": "Play Time", "link": "/" }]
+      }
+    ],
+
+    "brands": [
+      {
+        "title": "ajio gold brands",
+        "link": "/",
+        "links": [
+          { "title": "Armani Exchange", "link": "/" },
+          { "title": "G Star Raw", "link": "/" },
+          { "title": "GAS", "link": "/" },
+          { "title": "Replay", "link": "/" },
+          { "title": "New Balance", "link": "/" },
+          { "title": "Lacoste", "link": "/" },
+          { "title": "Superdry", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "exclusive brands",
+        "link": "/",
+        "links": [
+          { "title": "DMNX", "link": "/" },
+          { "title": "First Class", "link": "/" },
+          { "title": "John Players", "link": "/" },
+          { "title": "Netplay", "link": "/" },
+          { "title": "Network", "link": "/" },
+          { "title": "Performax", "link": "/" },
+          { "title": "Altheory", "link": "/" },
+          { "title": "Teamspirit", "link": "/" },
+          { "title": "Uniquest", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "international brands",
+        "link": "/",
+        "links": [
+          { "title": "Aeropostale #USA", "link": "/" },
+          { "title": "Alcott #Italy", "link": "/" },
+          { "title": "Brave Soul #UK", "link": "/" },
+          { "title": "French Connection", "link": "/" },
+          { "title": "Guess", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "footwear",
+        "link": "/",
+        "links": [
+          { "title": "ADIDAS", "link": "/" },
+          { "title": "Campus", "link": "/" },
+          { "title": "Crocs", "link": "/" },
+          { "title": "Nike", "link": "/" },
+          { "title": "Puma", "link": "/" },
+          { "title": "Red Tape", "link": "/" },
+          { "title": "Reebok", "link": "/" },
+          { "title": "Skechers", "link": "/" },
+          { "title": "UCB", "link": "/" },
+          { "title": "Woodland", "link": "/" },
+          { "title": "New Balance", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "western wear",
+        "link": "/",
+        "links": [
+          { "title": "Gap", "link": "/" },
+          { "title": "Hubberholme", "link": "/" },
+          { "title": "Jack & Jones", "link": "/" },
+          { "title": "LEVIS", "link": "/" },
+          { "title": "Mufti", "link": "/" },
+          { "title": "Puma", "link": "/" },
+          { "title": "SPYKAR", "link": "/" },
+          { "title": "Tommy Hilfiger", "link": "/" },
+          { "title": "US Polo Assn", "link": "/" },
+          { "title": "United Colors of Benetton", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "innerwear",
+        "link": "/",
+        "links": [
+          { "title": "Calvin Klein Underwear", "link": "/" },
+          { "title": "Jockey", "link": "/" },
+          { "title": "Playboy", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "accessories",
+        "link": "/",
+        "links": [
+          { "title": "ADDIDAS", "link": "/" },
+          { "title": "Allen Solly", "link": "/" },
+          { "title": "Chris Kate", "link": "/" },
+          { "title": "F Gear", "link": "/" },
+          { "title": "LEVIS", "link": "/" },
+          { "title": "Puma", "link": "/" },
+          { "title": "Rayban", "link": "/" },
+          { "title": "United Colors of Benetton", "link": "/" },
+          { "title": "Woodland", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "A-Z Brands",
+        "link": "/",
+        "links": []
+      }
+    ]
+  },
+
+  "women": {
+    "categories": [
+      {
+        "title": "new in: clothing",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: footwear & accs",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "western wear",
+        "link": "/",
+        "links": [
+          { "title": "Tops", "link": "/" },
+          { "title": "T-Shirts", "link": "/" },
+          { "title": "Jeans & Jeggings", "link": "/" },
+          { "title": "Dresses", "link": "/" },
+          { "title": "Trousers & Pants", "link": "/" },
+          { "title": "Shirts", "link": "/" },
+          { "title": "Track Pants", "link": "/" },
+          { "title": "Skirts & Shorts", "link": "/" },
+          { "title": "Jackets & Coats", "link": "/" },
+          { "title": "Jumpsuits & Playsuits", "link": "/" },
+          { "title": "Shrugs & Boleros", "link": "/" },
+          { "title": "Sweatshirts & Hoodies", "link": "/" },
+          { "title": "Sweaters & Cardigans", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "ethnic wear",
+        "link": "/",
+        "links": [
+          { "title": "Kurtas", "link": "/" },
+          { "title": "Salwars & Churidars", "link": "/" },
+          { "title": "Kurtis & Tunics", "link": "/" },
+          { "title": "Sarees", "link": "/" },
+          { "title": "Dupattas", "link": "/" },
+          { "title": "Dress Material", "link": "/" },
+          { "title": "Kurta Suit Sets", "link": "/" },
+          { "title": "Blouses", "link": "/" },
+          { "title": "Leggings", "link": "/" },
+          { "title": "Jackets & Shrugs", "link": "/" },
+          { "title": "Skirts & Ghagras", "link": "/" },
+          { "title": "Shawls & Wraps", "link": "/" },
+          { "title": "Palazzos & Culottes", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "lingerie & innerwear",
+        "link": "/",
+        "links": [
+          { "title": "Bras", "link": "/" },
+          { "title": "Panties", "link": "/" },
+          { "title": "Camisoles & Slips", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "winterwear",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "precious jewellery",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "home & kitchen",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "night & loungewear",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "athleisure",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "new": "true",
+        "title": "beauty",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "fusion wear",
+        "link": "/",
+        "links": [
+          { "title": "Dresses & Gowns", "link": "/" },
+          { "title": "Kurtas", "link": "/" },
+          { "title": "Kurtis & Tunics", "link": "/" },
+          { "title": "Pants & Shorts", "link": "/" },
+          { "title": "Jackets & Shrugs", "link": "/" },
+          { "title": "Shirts, Tops & Tunics", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "fashion jewellery",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "bags, belts & wallets",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "footwear",
+        "link": "/",
+        "links": [
+          { "title": "Casual Shoes", "link": "/" },
+          { "title": "Flat Sandals", "link": "/" },
+          { "title": "Sports Shoes", "link": "/" },
+          { "title": "Flip Flop & Slippers", "link": "/" },
+          { "title": "Heeled Sandals", "link": "/" },
+          { "title": "Heeled Shoes", "link": "/" },
+          { "title": "Boots", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "Sunglasses & Frames",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "Watches",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "featured",
+        "link": "/",
+        "links": [
+          { "title": "Dresses Under 999", "link": "/" },
+          { "title": "Footwear Under 799", "link": "/" },
+          { "title": "Sarees Under 799", "link": "/" },
+          { "title": "Top Under 499", "link": "/" }
+        ]
+      }
+    ],
+    "brands": [
+      {
+        "title": "ajio gold brands",
+        "link": "/",
+        "links": [
+          { "title": "Armani Exchange", "link": "/" },
+          { "title": "G Star Raw", "link": "/" },
+          { "title": "GAS", "link": "/" },
+          { "title": "Replay", "link": "/" },
+          { "title": "New Balance", "link": "/" },
+          { "title": "Lacoste", "link": "/" },
+          { "title": "Superdry", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "international brands",
+        "link": "/",
+        "links": [
+          { "title": "Aeropostale", "link": "/" },
+          { "title": "Brave Soul", "link": "/" },
+          { "title": "Closet London", "link": "/" },
+          { "title": "French Connection", "link": "/" },
+          { "title": "Guess", "link": "/" },
+          { "title": "Point Zero", "link": "/" },
+          { "title": "TALLY WEiJL", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "exclusive brands",
+        "link": "/",
+        "links": [
+          { "title": "Aks", "link": "/" },
+          { "title": "Rio", "link": "/" },
+          { "title": "Fig", "link": "/" },
+          { "title": "Svrnaa", "link": "/" },
+          { "title": "Outryt", "link": "/" },
+          { "title": "Uniquest", "link": "/" },
+          { "title": "DNMX", "link": "/" },
+          { "title": "Teamspirit", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "western wear",
+        "link": "/",
+        "links": [
+          { "title": "GAP", "link": "/" },
+          { "title": "Levis", "link": "/" },
+          { "title": "Marks & Spencer", "link": "/" },
+          { "title": "Miss Chase", "link": "/" },
+          { "title": "Nike", "link": "/" },
+          { "title": "Tommy Hilfiger", "link": "/" },
+          { "title": "Vero Moda", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "ethnic wear",
+        "link": "/",
+        "links": [
+          { "title": "Alena", "link": "/" },
+          { "title": "Ishin", "link": "/" },
+          { "title": "Jaipur Kurti", "link": "/" },
+          { "title": "Biba", "link": "/" },
+          { "title": "W", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "footwear",
+        "link": "/",
+        "links": [
+          { "title": "Carlton London", "link": "/" },
+          { "title": "Catwalk", "link": "/" },
+          { "title": "Crocs", "link": "/" },
+          { "title": "Hi Attitude", "link": "/" },
+          { "title": "Marc Loire", "link": "/" },
+          { "title": "Nike", "link": "/" },
+          { "title": "Puma", "link": "/" },
+          { "title": "Skechers", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "fusion wear",
+        "link": "/",
+        "links": [
+          { "title": "Global Desi", "link": "/" },
+          { "title": "Indya", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "accessories",
+        "link": "/",
+        "links": [
+          { "title": "Baggit", "link": "/" },
+          { "title": "Caprese", "link": "/" },
+          { "title": "Hidesign", "link": "/" },
+          { "title": "Lavie", "link": "/" },
+          { "title": "Mark & Keith", "link": "/" },
+          { "title": "Zaveri Pearls", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "lingerie & innerwear",
+        "link": "/",
+        "links": [
+          { "title": "Enamor", "link": "/" },
+          { "title": "Jockey", "link": "/" },
+          { "title": "Marks & Spencer", "link": "/" },
+          { "title": "Triumph", "link": "/" },
+          { "title": "Zivame", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "A-Z Brands",
+        "link": "/",
+        "links": []
+      }
+    ]
+  },
+
+  "kids": {
+    "categories": [
+      {
+        "title": "new in: clothing",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: footwear & accs",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "innerwear & sleepwear",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "boys",
+        "link": "/",
+        "links": [
+          { "title": "Denims & Trousers", "link": "/" },
+          { "title": "Joggers & Track Pants", "link": "/" },
+          { "title": "Outerwear", "link": "/" },
+          { "title": "Shirts", "link": "/" },
+          { "title": "Shorts & 3/4ths", "link": "/" },
+          { "title": "T-Shirts", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "shop by age",
+        "link": "/",
+        "links": [
+          { "title": "0-2 Years", "link": "/" },
+          { "title": "2-5 Years", "link": "/" },
+          { "title": "5-10 Years", "link": "/" },
+          { "title": "10-14 Years", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured",
+        "link": "/",
+        "links": [
+          { "title": "Denims Under 799", "link": "/" },
+          { "title": "Shirts Under 599", "link": "/" },
+          { "title": "T-Shirts Under 399", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "Girls",
+        "link": "/",
+        "links": [
+          { "title": "Dresses & Frocks", "link": "/" },
+          { "title": "Jeans & Jeggings", "link": "/" },
+          { "title": "Leggings", "link": "/" },
+          { "title": "Outerwear", "link": "/" },
+          { "title": "Skirts & Shorts", "link": "/" },
+          { "title": "Tops & T-Shirts", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "shop by age",
+        "link": "/",
+        "links": [
+          { "title": "2-5 Years", "link": "/" },
+          { "title": "5-10 Years", "link": "/" },
+          { "title": "10-14 Years", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured",
+        "link": "/",
+        "links": [
+          { "title": "Dresses Under 499", "link": "/" },
+          { "title": "Tops Under 399", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "baby",
+        "link": "/",
+        "links": [{ "title": "Sets", "link": "/" }]
+      },
+
+      {
+        "title": "toys and babycare",
+        "link": "/",
+        "links": [
+          { "title": "Action-Figurine & Collectibles", "link": "/" },
+          { "title": "Creative & Educational Toys", "link": "/" },
+          { "title": "Gaming, Robots & Vehicles", "link": "/" },
+          { "title": "Infant Toys", "link": "/" },
+          { "title": "Role & Pretend Play", "link": "/" },
+          { "title": "School, Party Supplies & Books", "link": "/" },
+          { "title": "Soft Toys", "link": "/" },
+          { "title": "Toy-Guns & Accessories", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "collections",
+        "link": "/",
+        "links": [
+          { "title": "Festive Dresses", "link": "/" },
+          { "title": "Moto Racer", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "ajio exclusives",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "Footwear & Accessories",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "featured brands",
+        "link": "/",
+        "links": [
+          { "title": "Crocs", "link": "/" },
+          { "title": "Flying Machine Kids", "link": "/" },
+          { "title": "MINI KLUB", "link": "/" },
+          { "title": "Gini & Jony", "link": "/" },
+          { "title": "Hamleys", "link": "/" },
+          { "title": "Mothercare", "link": "/" },
+          { "title": "Marks & Spencer", "link": "/" },
+          { "title": "Pepe Jeans", "link": "/" },
+          { "title": "Pepermint", "link": "/" },
+          { "title": "UCB Kids", "link": "/" },
+          { "title": "U.S.P.A Kids", "link": "/" },
+          { "title": "MILA BABY", "link": "/" },
+          { "title": "Under Armour", "link": "/" },
+          { "title": "MUJI", "link": "/" }
+        ]
+      }
+    ]
+  },
+
+  "indie": {
+    "categories": [
+      {
+        "title": "new in: clothing",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: sarees",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: jewellery",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: footwear & accs",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "new in: home",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "clothing",
+        "link": "/",
+        "links": [
+          { "title": "Sarees", "link": "/" },
+          { "title": "Kurtas", "link": "/" },
+          { "title": "Dresses", "link": "/" },
+          { "title": "Tops & Tunics", "link": "/" },
+          { "title": "Dupattas", "link": "/" },
+          { "title": "Dress Materials", "link": "/" },
+          { "title": "Blouses & Blouse Fabrics", "link": "/" },
+          { "title": "Pants, Skirts & Palazzos", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "footwear",
+        "link": "/",
+        "links": [
+          { "title": "Chappals", "link": "/" },
+          { "title": "Juttis", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "fashion jewellery",
+        "link": "/",
+        "links": [
+          { "title": "Bangles & Bracelets", "link": "/" },
+          { "title": "Earrings & Rings", "link": "/" },
+          { "title": "Necklaces & Pendants", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "accessories",
+        "link": "/",
+        "links": [
+          { "title": "Bags & Belts", "link": "/" },
+          { "title": "Shawls & Wraps", "link": "/" },
+          { "title": "Stoles & Scarves", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "menswear",
+        "link": "/",
+        "links": [
+          { "title": "Kurtas", "link": "/" },
+          { "title": "Nehru Jackets & Ties", "link": "/" },
+          { "title": "Shirts", "link": "/" },
+          { "title": "Footwear", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "home",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "world crafts",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "regional specialities",
+        "link": "/",
+        "links": [
+          { "title": "Ajrak", "link": "/" },
+          { "title": "Bagh", "link": "/" },
+          { "title": "Bagru", "link": "/" },
+          { "title": "Banaras & Brocades", "link": "/" },
+          { "title": "Chanderi & Maheshwari", "link": "/" },
+          { "title": "Indigo", "link": "/" },
+          { "title": "Kalamkari", "link": "/" },
+          { "title": "Kerala Kasavu", "link": "/" },
+          { "title": "Kosa & Tussar", "link": "/" },
+          { "title": "Kullu", "link": "/" },
+          { "title": "Kutch Embroidery", "link": "/" },
+          { "title": "Linen", "link": "/" },
+          { "title": "Mangalgiri", "link": "/" },
+          { "title": "Orissa Ikat", "link": "/" },
+          { "title": "Pochampally Ikat", "link": "/" },
+          { "title": "Shibori", "link": "/" },
+          { "title": "South Cotton", "link": "/" },
+          { "title": "South Silks", "link": "/" },
+          { "title": "Tant Tangail & Jamdani", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured brands",
+        "link": "/",
+        "links": [
+          { "title": "Indie Picks", "link": "/" },
+          { "title": "Indie Picks By AJIO", "link": "/" },
+          { "title": "Indie Picks Essentials", "link": "/" },
+          { "title": "Molcha", "link": "/" },
+          { "title": "Pretty Woman", "link": "/" },
+          { "title": "Swadesh", "link": "/" },
+          { "title": "Pothys", "link": "/" },
+          { "title": "Rudrakaashe By MSU", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured",
+        "link": "/",
+        "links": [
+          { "title": "Saree Under 999", "link": "/" },
+          { "title": "Kurtas & Sets at 1499", "link": "/" },
+          { "title": "Dupattas Under 499", "link": "/" },
+          { "title": "Earring Under 299", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "celebration",
+        "link": "/",
+        "links": [
+          { "title": "Onam", "link": "/" },
+          { "title": "Rakhi", "link": "/" },
+          { "title": "Handpicked Loom", "link": "/" }
+        ]
+      }
+    ]
+  },
+
+  "home and kitchen": {
+    "categories": [
+      {
+        "title": "new in: home",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "ben linen",
+        "link": "/",
+        "links": [
+          { "title": "Bedsheets", "link": "/" },
+          { "title": "Bedcovers & Sets", "link": "/" },
+          { "title": "Blankets, Dohars & Quilts", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "cushions & covers",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "curtains & accessories",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "carpets, rugs & dhurries",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "dining & kitchen",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "bath",
+        "link": "/",
+        "links": []
+      },
+
+      {
+        "title": "home decor",
+        "link": "/",
+        "links": [
+          { "title": "Aromas & Candles", "link": "/" },
+          { "title": "Artifacts", "link": "/" },
+          { "title": "Wall Arts", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured stories",
+        "link": "/",
+        "links": [
+          { "title": "Cushion Covers Under 499", "link": "/" },
+          { "title": "Bedsheet Under 999", "link": "/" },
+          { "title": "Wall Painting Under 499", "link": "/" },
+          { "title": "Curtains Under 1499", "link": "/" },
+          { "title": "Mats Under 499", "link": "/" },
+          { "title": "Gift Zone Upto 75 Percent off", "link": "/" },
+          { "title": "Heritage of India", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "exclusive brands",
+        "link": "/",
+        "links": [
+          { "title": "Indie Picks", "link": "/" },
+          { "title": "Muji", "link": "/" }
+        ]
+      },
+
+      {
+        "title": "featured brands",
+        "link": "/",
+        "links": [
+          { "title": "Swayam", "link": "/" },
+          { "title": "Ddecor", "link": "/" },
+          { "title": "Maspar", "link": "/" },
+          { "title": "Trident", "link": "/" },
+          { "title": "Story At Home", "link": "/" },
+          { "title": "Raymond Home", "link": "/" },
+          { "title": "Sej By Nisha Gupta", "link": "/" },
+          { "title": "Chumbak", "link": "/" },
+          { "title": "Layers", "link": "/" },
+          { "title": "Beliacasa", "link": "/" },
+          { "title": "Romee", "link": "/" },
+          { "title": "Arrabi", "link": "/" },
+          { "title": "Bianca", "link": "/" },
+          { "title": "Home Sizzler", "link": "/" },
+          { "title": "House This", "link": "/" },
+          { "title": "Houzzcode", "link": "/" },
+          { "title": "Salona Bichona", "link": "/" },
+          { "title": "Sheen Decor", "link": "/" },
+          { "title": "Shades of Life", "link": "/" },
+          { "title": "Soumya", "link": "/" }
+        ]
+      }
+    ]
+  }
+}
