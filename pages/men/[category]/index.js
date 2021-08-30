@@ -13,11 +13,29 @@ import {
 const Products = (props) => {
   const [isGridThree, setIsGridThree] = useState(true);
   const { category, subCategory, data } = props;
-  const products = JSON.parse(data);
+  const [products, setProducts] = useState(JSON.parse(data));
   const [sortOrder, setSortOrder] = useState("relevance");
   const onSortOrderChange = (event) => {
     setSortOrder(event.target.value);
   };
+
+  console.log(Array.isArray(products));
+
+  useEffect(() => {
+    fetch("/api/men-products", {
+      method: "POST",
+      body: JSON.stringify({ sortOrder, filter: props.filter }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.data);
+        // console.log(data.data);
+        // console.log(Array.isArray(data.data));
+      });
+  }, [sortOrder]);
 
   const setThreeGridLayout = () => {
     setIsGridThree(true);
@@ -39,7 +57,7 @@ const Products = (props) => {
           <div className="space-y-8 m-8">
             <div className="px-32 text-sm">
               <h1 className="uppercase text-center space-y-1 mb-2">
-                <div>{"men's"}</div>
+                <div>men's</div>
                 <div className="text-3xl">
                   {toNormalWord(subCategory || category)}
                 </div>
@@ -101,7 +119,7 @@ const Products = (props) => {
                     <option value="relevence">Relevence</option>
                     <option value="price-low">Price Lowest First</option>
                     <option value="price-high">Price Highest First</option>
-                    <option value="new">{"What's New"}</option>
+                    <option value="new">What's New</option>
                     <option value="discount">Discount</option>
                   </select>
                 </div>
@@ -132,7 +150,7 @@ const Products = (props) => {
   );
 };
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const category = context.query.category;
   const subCategory = context.query["sub-category"] || "";
   const filter = { category: category };
@@ -154,6 +172,10 @@ export async function getServerSideProps(context) {
       data: JSON.stringify(data),
     },
   };
+}
+
+export async function getStaticPaths() {
+  return { paths: ["/men/wester-wear"], fallback: false };
 }
 
 export default Products;
