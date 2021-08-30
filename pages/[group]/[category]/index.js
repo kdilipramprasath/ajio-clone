@@ -5,37 +5,18 @@ import { getDataFromMongoDB } from "../../../utilities/fetch-data";
 import SideBar from "../../../components/side-bar/side-bar";
 import ProductCard from "../../../components/products/product-card";
 
-import {
-  toReducedPrice,
-  toNormalWord,
-} from "../../../utilities/products-utilities";
+import { toNormalWord } from "../../../utilities/products-utilities";
 
 const Products = (props) => {
   const [isGridThree, setIsGridThree] = useState(true);
   const { category, subCategory, data } = props;
-  const [products, setProducts] = useState(JSON.parse(data));
+  const products = JSON.parse(data);
   const [sortOrder, setSortOrder] = useState("relevance");
   const onSortOrderChange = (event) => {
     setSortOrder(event.target.value);
   };
 
   console.log(Array.isArray(products));
-
-  useEffect(() => {
-    fetch("/api/men-products", {
-      method: "POST",
-      body: JSON.stringify({ sortOrder, filter: props.filter }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data.data);
-        // console.log(data.data);
-        // console.log(Array.isArray(data.data));
-      });
-  }, [sortOrder]);
 
   const setThreeGridLayout = () => {
     setIsGridThree(true);
@@ -150,13 +131,16 @@ const Products = (props) => {
   );
 };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
+  const group = context.query.group;
   const category = context.query.category;
   const subCategory = context.query["sub-category"] || "";
-  const filter = { category: category };
+  const filter = { group, category };
   if (subCategory !== "") {
     filter["sub-category"] = subCategory;
   }
+
+  console.log(filter);
 
   const data = await getDataFromMongoDB(filter);
 
@@ -172,10 +156,6 @@ export async function getStaticProps(context) {
       data: JSON.stringify(data),
     },
   };
-}
-
-export async function getStaticPaths() {
-  return { paths: ["/men/wester-wear"], fallback: false };
 }
 
 export default Products;

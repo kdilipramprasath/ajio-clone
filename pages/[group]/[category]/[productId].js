@@ -309,8 +309,9 @@ const ProductDetailsPage = (props) => {
 };
 
 export async function getServerSideProps(context) {
+  const group = context.query.group;
   const productId = context.query.productId;
-  const data = await getDataFromMongoDB({ _id: ObjectId(productId) });
+  const data = await getDataFromMongoDB({ _id: ObjectId(productId), group });
 
   console.log(data);
 
