@@ -9,7 +9,7 @@ const NavigationModal = (props) => {
   const [isThereBrandSection, setIsThereBrandSection] = useState(false);
 
   useEffect(() => {
-    fetch("/api/nav-bar-links")
+    fetch("/Links/links.json")
       .then((res) => res.json())
       .then((data) => {
         setCategories(
