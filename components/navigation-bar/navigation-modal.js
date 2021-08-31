@@ -9,7 +9,7 @@ const NavigationModal = (props) => {
   const [isThereBrandSection, setIsThereBrandSection] = useState(false);
 
   useEffect(() => {
-    fetch("/Links/links.json")
+    fetch("/api/nav-bar-links")
       .then((res) => res.json())
       .then((data) => {
         setCategories(
@@ -19,10 +19,12 @@ const NavigationModal = (props) => {
                 <div className="font-bold mb-1 flex items-center">
                   {current_category.link !== "/" ? (
                     <Link href={current_category.link}>
-                      {current_category.title}
+                      <a onClick={props.onMouseOut}>{current_category.title}</a>
                     </Link>
                   ) : (
-                    <div className="select-none text-gray-300">{current_category.title}</div>
+                    <div className="select-none text-gray-300">
+                      {current_category.title}
+                    </div>
                   )}
                   {current_category.hot && (
                     <div
@@ -46,9 +48,13 @@ const NavigationModal = (props) => {
                     return (
                       <div key={link.title}>
                         {link.link !== "/" ? (
-                          <Link href={link.link}>{link.title}</Link>
+                          <Link href={link.link}>
+                            <a onClick={props.onMouseOut}>{link.title}</a>
+                          </Link>
                         ) : (
-                          <div className="select-none text-gray-300">{link.title}</div>
+                          <div className="select-none text-gray-300">
+                            {link.title}
+                          </div>
                         )}
                       </div>
                     );
@@ -69,7 +75,9 @@ const NavigationModal = (props) => {
                   <div className="font-bold mb-1 flex items-center">
                     {current_category.link !== "/" ? (
                       <Link href={current_category.link}>
-                        {current_category.title}
+                        <a onClick={props.onMouseOut}>
+                          {current_category.title}
+                        </a>
                       </Link>
                     ) : (
                       <div className="select-none">
@@ -82,9 +90,13 @@ const NavigationModal = (props) => {
                       return (
                         <div key={link.title}>
                           {link.link !== "/" ? (
-                            <Link href={link.link}>{link.title}</Link>
+                            <Link href={link.link}>
+                              <a onClick={props.onMouseOut}>{link.title}</a>
+                            </Link>
                           ) : (
-                            <div className="select-none text-gray-300">{link.title}</div>
+                            <div className="select-none text-gray-300">
+                              {link.title}
+                            </div>
                           )}
                         </div>
                       );
@@ -102,9 +114,9 @@ const NavigationModal = (props) => {
 
   return (
     <div
-      onMouseOver={props.onMouseOverHandler}
-      onMouseOut={props.onMouseOutHandler}
-      className={`absolute w-full max-w-screen-xl left-0 top-24 bg-gray-50 hidden ${
+      onMouseOver={props.onMouseOver}
+      onMouseOut={props.onMouseOut}
+      className={`absolute w-full max-w-screen-xl z-10 left-0 top-24 bg-gray-50 hidden ${
         props.showModal && "show-block"
       }`}
     >

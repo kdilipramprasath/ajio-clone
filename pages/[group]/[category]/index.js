@@ -16,7 +16,7 @@ const Products = (props) => {
     setSortOrder(event.target.value);
   };
 
-  console.log(Array.isArray(products));
+  console.log("Hello!");
 
   const setThreeGridLayout = () => {
     setIsGridThree(true);

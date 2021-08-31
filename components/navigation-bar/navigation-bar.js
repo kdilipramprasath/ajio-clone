@@ -188,6 +188,16 @@ const NavigationBar = () => {
           </div>
         </div>
       </header>
+      <div
+        className={`fixed z-10 top-0 right-0 bottom-0 left-0 bg-black opacity-30 hidden ${
+          (showMensLinks ||
+            showWomensLinks ||
+            showKidsLinks ||
+            showIndiesLinks ||
+            showHomeAndKitchenLinks) &&
+          "show-block"
+        }`}
+      ></div>
     </Fragment>
   );
 };
