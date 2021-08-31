@@ -38,7 +38,7 @@ const Products = (props) => {
           <div className="space-y-8 m-8">
             <div className="px-32 text-sm">
               <h1 className="uppercase text-center space-y-1 mb-2">
-                <div>men's</div>
+                <div>{"men's"}</div>
                 <div className="text-3xl">
                   {toNormalWord(subCategory || category)}
                 </div>
@@ -100,7 +100,7 @@ const Products = (props) => {
                     <option value="relevence">Relevence</option>
                     <option value="price-low">Price Lowest First</option>
                     <option value="price-high">Price Highest First</option>
-                    <option value="new">What's New</option>
+                    <option value="new">{"What's New"}</option>
                     <option value="discount">Discount</option>
                   </select>
                 </div>
