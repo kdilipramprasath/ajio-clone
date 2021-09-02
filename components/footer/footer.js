@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-primary text-gray-300 w-screen py-8 text-sm">
-        <div className=" max-w-screen-xl mx-auto px-6 box-border">
+        <div className="max-w-screen-xl mx-auto px-6 box-border">
           <div>
             <div
               className="flex items-center text-xs mb-6 select-none"
@@ -252,7 +252,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="pt-8 pb-2">
+          <div className="pt-8 pb-2 px-6">
             <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
               <div>
                 <div className="mb-4">

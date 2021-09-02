@@ -19,8 +19,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     setShowDialogue(true);
-    console.log("Show Dialogue!");
-  }, []);
+  }, [setShowDialogue]);
 
   return (
     <Provider store={store}>
