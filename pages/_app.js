@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { useEffect, useState } from "react";
 
 import Head from "next/head";
 
@@ -8,8 +8,20 @@ import store from "../store/index";
 import "../styles/globals.css";
 import NavigationBar from "../components/navigation-bar/navigation-bar";
 import Footer from "../components/footer/footer";
+import ForMobile from "../components/For Mobiles/for-mobile";
 
 function MyApp({ Component, pageProps }) {
+  const [showDialogue, setShowDialogue] = useState(false);
+
+  const hideDialogue = () => {
+    setShowDialogue(false);
+  };
+
+  useEffect(() => {
+    setShowDialogue(true);
+    console.log("Show Dialogue!");
+  }, []);
+
   return (
     <Provider store={store}>
       <Head>
@@ -21,8 +33,13 @@ function MyApp({ Component, pageProps }) {
           height={50}
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta charSet="utf-8" />
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
       </Head>
+      {showDialogue && <ForMobile hideDialogue={hideDialogue} />}
       <NavigationBar />
       <div
         style={{

@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-primary text-gray-300 w-screen py-8 text-sm">
-        <div className=" max-w-screen-xl mx-auto">
+        <div className=" max-w-screen-xl mx-auto px-6 box-border">
           <div className="mb-8">
             <div className="flex items-center text-xs mb-6" onClick={toggleAboutAjio}>
               More about shopping from AJIO

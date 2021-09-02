@@ -6,7 +6,7 @@ class AjioCloneDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
-          <div id="overlays" className="absolute z-50 top-0 left-0"></div>
+          <div id="overlays" className="fixed z-50 top-0 left-0"></div>
           <div className="relative z-10">
             <Main />
           </div>
