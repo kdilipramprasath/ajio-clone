@@ -74,7 +74,7 @@ const NavigationBar = () => {
             </Link>
           </div>
 
-          <div className="h-full flex flex-col text-primary">
+          <div className="h-full hidden lg:flex flex-col text-primary">
             <div className="flex justify-end items-center tracking-wider text-xs space-x-8 h-10 mt-2">
               <div>
                 <Link href="/">Sign In / Join AJIO</Link>

@@ -7,37 +7,21 @@ import {
   ShoppingBagIcon,
   BadgeCheckIcon,
   ChevronDownIcon,
-  ChevronUpIcon
+  ChevronUpIcon,
 } from "@heroicons/react/solid";
 
 const Footer = () => {
   const [showAboutAjio, setShowAboutAjio] = useState(false);
 
   const toggleAboutAjio = () => {
-      setShowAboutAjio(prevState => !prevState);
+    setShowAboutAjio((prevState) => !prevState);
   };
 
   return (
     <Fragment>
-      {/* <div className="bg-primary py-3 border-4 box-border border-yellow-400">
-        <div className="max-w-screen-lg mx-auto tracking-wide my-3 text-center text-white uppercase space-y-3">
-          <h1 className="text-4xl font-semibold text-yellow-400">Ajio Cares</h1>
-          <div className="space-y-1">
-            <p>
-              we do not ask for your bank account or card details verbally or
-              telephonically.
-            </p>
-            <p>
-              we also do not ask for money to participate in any of our offers
-              or run any lucky draws.
-            </p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="py-8 bg-gray-50">
         <div className="max-w-screen-lg mx-auto">
-          <div className="flex justify-between tracking-wider font-semibold uppercase">
+          <div className="px-6 flex flex-col lg:flex-row space-y-16 lg:space-y-0 justify-between tracking-wider font-semibold uppercase">
             <div className="flex flex-col items-center">
               <div>
                 <ShoppingBagIcon className="h-12 w-12 text-primary mb-2" />
@@ -64,13 +48,20 @@ const Footer = () => {
 
       <div className="bg-primary text-gray-300 w-screen py-8 text-sm">
         <div className=" max-w-screen-xl mx-auto px-6 box-border">
-          <div className="mb-8">
-            <div className="flex items-center text-xs mb-6" onClick={toggleAboutAjio}>
+          <div>
+            <div
+              className="flex items-center text-xs mb-6 select-none"
+              onClick={toggleAboutAjio}
+            >
               More about shopping from AJIO
-              {!showAboutAjio && <ChevronDownIcon className="ml-2 h-5 w-5 inline-block" />}
-              {showAboutAjio && <ChevronUpIcon className="ml-2 h-5 w-5 inline-block" />}
+              {!showAboutAjio && (
+                <ChevronDownIcon className="ml-2 h-5 w-5 inline-block" />
+              )}
+              {showAboutAjio && (
+                <ChevronUpIcon className="ml-2 h-5 w-5 inline-block" />
+              )}
             </div>
-            <div className={`space-y-6 ${!showAboutAjio && "hidden"}`}>
+            <div className={`space-y-6 mb-16 ${!showAboutAjio && "hidden"}`}>
               <div>
                 <h1 className="text-base font-semibold mb-1">
                   Buy Clothes, Footwear & Fashion Online for Men | AJIO
@@ -146,8 +137,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex justify-between pb-16 border-gray-300 border-b">
-            <div>
+          <div className="select-none grid grid-cols-1 text-center md:text-left md:grid-cols-2 lg:grid-cols-4 border-gray-300 border-b">
+            <div className="mb-8">
               <div className="mb-5">
                 <Link href="/">Ajio</Link>
               </div>
@@ -176,7 +167,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="mb-8">
               <div className="mb-5">
                 <Link href="/">Help</Link>
               </div>
@@ -205,7 +196,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="mb-8">
               <div className="mb-5">
                 <Link href="/">Shop by</Link>
               </div>
@@ -240,7 +231,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="mb-8">
               <div className="mb-5">
                 <Link href="/">Follow Us</Link>
               </div>
@@ -262,34 +253,32 @@ const Footer = () => {
           </div>
 
           <div className="pt-8 pb-2">
-            <div className="flex justify-between">
+            <div className="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
               <div>
-                <div className="mb-6">
+                <div className="mb-4">
                   <Link href="/">Payment methods</Link>
                 </div>
-                <div className="flex justify-between">
-                  <div className="flex space-x-6">
-                    <div>
-                      <Link href="/">Net Banking</Link>
-                    </div>
-                    <div>
-                      <Link href="/">VISA</Link>
-                    </div>
-                    <div>
-                      <Link href="/">Mater Card</Link>
-                    </div>
-                    <div>
-                      <Link href="/">Cash on Delivery</Link>
-                    </div>
-                    <div>
-                      <Link href="/">Jio money</Link>
-                    </div>
+                <div className="flex flex-col md:flex-row md:space-x-6">
+                  <div>
+                    <Link href="/">Net Banking</Link>
+                  </div>
+                  <div>
+                    <Link href="/">VISA</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Mater Card</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Cash on Delivery</Link>
+                  </div>
+                  <div>
+                    <Link href="/">Jio money</Link>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-between text-right">
-                <div>Secure System</div>
+              <div className="flex flex-col justify-between md:text-right">
+                <div className="mb-4">Secure System</div>
                 <div>256-bit SSL Encryption</div>
               </div>
             </div>
