@@ -38,7 +38,7 @@ const Cart = () => {
                 items to your account, or view items already in your account.
               </p>
               <div>
-                <Link href="/">
+                <Link href="/" passHref>
                   <a className="uppercase py-4 px-6 tracking-wide text-xs text-white font-semibold bg-yellow-600 inline-block">
                     continue shopping
                   </a>
@@ -83,7 +83,7 @@ const Cart = () => {
                   ({products.length} items)
                 </span>
               </h1>
-              <Link href={router.route}>
+              <Link href={router.route} passHref>
                 <div className="text-blue-700 font-semibold text-sm flex items-center space-x-2">
                   <PlusIcon className="w-3 h-3" />
                   <a>Add from closet</a>
@@ -101,7 +101,7 @@ const Cart = () => {
               })}
             </div>
             <div className="flex items-center justify-end my-4">
-              <Link href={router.route}>
+              <Link href={router.route} passHref>
                 <div className="text-blue-700 font-semibold text-sm flex items-center space-x-2">
                   <PlusIcon className="w-3 h-3" />
                   <a>Add from closet</a>

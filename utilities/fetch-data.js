@@ -3,46 +3,109 @@
 
 import { MongoClient } from "mongodb";
 
-const url =
-  "mongodb+srv://ajio-clone:MGGqDEHx4EYbS*s@cluster0.7yaec.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-const client = new MongoClient(url);
+const { MONGODB_URI } = process.env;
 
-// export function buildDataPath() {
-//   return path.join(process.cwd(), "data", "products-json", "products.json");
-// }
+if (!MONGODB_URI) {
+  throw new Error(
+    "Please define the MONGODB_URI environment variable inside .env.local."
+  );
+}
 
-// export function extractData(filePath) {
-//   return JSON.parse(fs.readFileSync(filePath));
-// }
+let cached = global.mongo;
+if (!cached) cached = global.mongo = {};
 
-// export default function fetchData() {
-//   return extractData(buildDataPath());
-// }
+export async function connectToDatabase() {
+  if (cached.conn) return cached.conn;
 
-export async function getDataFromMongoDB(filter, sortOrder = "") {
-  const group = filter.group;
-  let sortBy = null;
-  if (sortOrder === "price-low") {
-    sortBy = { price: 1 };
+  if (!cached.promise) {
+    const conn = {};
+    const opts = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    };
+    cached.promise = MongoClient.connect(MONGODB_URI, opts)
+      .then((client) => {
+        conn.client = client;
+        return client.db();
+      })
+      .then((db) => {
+        conn.db = db;
+        cached.conn = conn;
+      });
+  }
+  await cached.promise;
+  return cached.conn;
+}
+
+export async function getDataFromMongoDB({ group, category, subCategory }) {
+  let db;
+
+  try {
+    db = (await connectToDatabase()).db;
+  } catch (err) {
+    console.log("Error message: " + err.message);
+    return;
   }
 
-  const filterObj = {};
-
-  Object.keys(filter).forEach((key) => {
-    if (key === "group") {
-      return;
-    }
-
-    filterObj[key] = filter[key];
-  });
-
-  console.log(filter);
-
-  await client.connect();
-  const db = client.db("ajio-clone"); //"ajio-clone"
   const collection = db.collection(group);
-  const data = await collection.find(filterObj).sort(sortBy).toArray();
 
-  client.close();
+  let data;
+  try {
+    if (!subCategory) {
+      data = await collection.find({ category }).toArray();
+    } else {
+      data = await collection
+        .find({ category, "sub-category": subCategory })
+        .toArray();
+    }
+  } catch (err) {
+    console.log("Error Message: On finding data: " + err.message);
+    return;
+  }
+
+  return data;
+}
+
+export async function getProductDetails({ _id, group }) {
+  let db;
+
+  try {
+    db = (await connectToDatabase()).db;
+  } catch (err) {
+    console.log("Error message: " + err.message);
+    return;
+  }
+
+  let data;
+  try {
+    data = await db.collection(group).findOne({ _id });
+  } catch (err) {
+    console.log("Error Message: On finding data: " + err.message);
+    return;
+  }
+
+  return data;
+}
+
+export async function getProductIds() {
+  let db;
+  try {
+    db = (await connectToDatabase()).db;
+  } catch (err) {
+    console.log("Error message: " + err.message);
+    return;
+  }
+
+  let data;
+  try {
+    data = await db
+      .collection("men")
+      .find({}, { projection: { _id: 1 } })
+      .toArray();
+  } catch (err) {
+    console.log("Error Message: On finding data: " + err.message);
+    return;
+  }
+
   return data;
 }

@@ -110,7 +110,7 @@ const NavigationModal = (props) => {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [props.menu, props.onMouseOut]);
 
   return (
     <div

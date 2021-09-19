@@ -21,16 +21,16 @@
 
       {
         "title": "western wear",
-        "link": "/men/western-wear",
+        "link": "/products/men/western-wear",
         "links": [
           {
             "title": "Jackets & Coats",
-            "link": "/men/western-wear?sub-category=jackets%26coats"
+            "link": "/products/men/western-wear/jackets&coats"
           },
           { "title": "Jeans", "link": "/" },
           {
             "title": "Shirts",
-            "link": "/men/western-wear?sub-category=shirts"
+            "link": "/products/men/western-wear/shirts"
           },
           { "title": "Shorts & 3/4ths", "link": "/" },
           { "title": "Sweatshirts & Hoodies", "link": "/" },
@@ -43,11 +43,11 @@
       {
         "hot": "true",
         "title": "ethnic & festive",
-        "link": "/men/ethnic&festive",
+        "link": "/products/men/ethnic&festive",
         "links": [
           {
             "title": "Kurtas & Shirts",
-            "link": "/men/ethnic%26festive?sub-category=kurtas%26shirts"
+            "link": "/products/men/ethnic&festive/kurtas&shirts"
           },
           { "title": "Nehru Jackets", "link": "/" }
         ]
@@ -55,16 +55,16 @@
 
       {
         "title": "footwear",
-        "link": "/men/footwear",
+        "link": "/products/men/footwear",
         "links": [
           {
             "title": "Casual Shoes",
-            "link": "/men/footwear?sub-category=casual-shoes"
+            "link": "/products/men/footwear/casual-shoes"
           },
           { "title": "Flip-Flops & Slippers", "link": "/" },
           {
             "title": "Formal Shoes",
-            "link": "/men/footwear?sub-category=formal-shoes"
+            "link": "/products/men/footwear/formal-shoes"
           },
           { "title": "Sandals", "link": "/" },
           { "title": "Sneakers", "link": "/" },

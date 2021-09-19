@@ -8,7 +8,7 @@ const ForMobile = ({ hideDialogue }) => {
         <div className="text-xl p-6 text-center">
           This project is not responsive for now for some reasons and only
           supports big screens. If you are viewing this project with screens
-          smaller than 10inch it may look odd! It's still under development.
+          smaller than 10inch it may look odd! It&apos;s still under development.
         </div>
         <button
           onClick={hideDialogue}

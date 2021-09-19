@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState, useCallback } from "react";
 
 import Image from "next/image";
 import Link from "next/Link";
@@ -16,11 +16,11 @@ const ProductDetailPageCarousal = ({
   const [currentImage, setCurrentImage] = useState(images[currentImageIndex]);
   const lastImageIndex = images.length - 1;
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImageIndex((prevState) =>
       prevState !== lastImageIndex ? prevState + 1 : 0
     );
-  };
+  }, [lastImageIndex]);
 
   const previousImage = () => {
     setCurrentImageIndex((prevState) =>
@@ -37,7 +37,7 @@ const ProductDetailPageCarousal = ({
     return () => {
       clearTimeout(imageLoop);
     };
-  }, [currentImageIndex]);
+  }, [currentImageIndex, duration, images, nextImage]);
 
   const onImageChange = (image) => {
     setCurrentImage(() => image);

@@ -78,6 +78,7 @@ const CartItem = (props) => {
           width={133.92}
           height={168}
           className="object-cover"
+          alt={description}
         />
       </div>
       <div className="flex flex-col justify-between w-full py-2 px-4 box-border">

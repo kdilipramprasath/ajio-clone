@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useState } from "react";
 
 import { getDataFromMongoDB } from "../../../utilities/fetch-data";
 
@@ -9,14 +9,8 @@ import { toNormalWord } from "../../../utilities/products-utilities";
 
 const Products = (props) => {
   const [isGridThree, setIsGridThree] = useState(true);
-  const { category, subCategory, data } = props;
-  const products = JSON.parse(data);
-  const [sortOrder, setSortOrder] = useState("relevance");
-  const onSortOrderChange = (event) => {
-    setSortOrder(event.target.value);
-  };
-
-  console.log("Hello!");
+  const { group, category, subCategory, data } = props;
+  const products = data && JSON.parse(data);
 
   const setThreeGridLayout = () => {
     setIsGridThree(true);
@@ -38,17 +32,23 @@ const Products = (props) => {
           <div className="space-y-8 m-8">
             <div className="px-32 text-sm">
               <h1 className="uppercase text-center space-y-1 mb-2">
-                <div>{"men's"}</div>
-                <div className="text-3xl">
-                  {toNormalWord(subCategory || category)}
-                </div>
+                {group ? (
+                  <Fragment>
+                    <div>{group + "'s"}</div>
+                    <div className="text-3xl">
+                      {toNormalWord(subCategory || category)}
+                    </div>
+                  </Fragment>
+                ) : (
+                  "Loading..."
+                )}
               </h1>
             </div>
             {/* -------------------------------------------------------------------- */}
             <div className="py-1 border-b-2 border-t-2 border-gray-100">
               <div className="py-3 px-4  bg-gray-100 flex justify-between items-center text-sm">
                 <div className="font-semibold text-gray-600 text-xs">
-                  {products.length} Items Found
+                  {products ? products.length + " Items found" : "Loading..."}
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="uppercase text-gray-400">Grid</span>
@@ -92,8 +92,6 @@ const Products = (props) => {
                 <div>
                   <span className="uppercase text-gray-400">Sort By</span>
                   <select
-                    value={sortOrder}
-                    onChange={onSortOrderChange}
                     name="sort-by"
                     className="capitalize focus:outline-none text-xs border border-black font-semibold p-1 ml-2"
                   >
@@ -108,22 +106,24 @@ const Products = (props) => {
             </div>
             {/* -------------------------------------------------------------------- */}
 
-            <div
-              className={`grid ${
-                isGridThree ? "grid-cols-3" : "grid-cols-5"
-              } gap-5`}
-            >
-              {products.map((product) => {
-                return (
-                  <div key={product._id}>
-                    <ProductCard
-                      product={product}
-                      basePath={"/men/" + category}
-                    />
-                  </div>
-                );
-              })}
-            </div>
+            {products && (
+              <div
+                className={`grid ${
+                  isGridThree ? "grid-cols-3" : "grid-cols-5"
+                } gap-5`}
+              >
+                {products.map((product) => {
+                  return (
+                    <div key={product._id}>
+                      <ProductCard
+                        product={product}
+                        basePath={"/product-details/" + group}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -131,30 +131,72 @@ const Products = (props) => {
   );
 };
 
-export async function getServerSideProps(context) {
-  const group = context.query.group;
-  const category = context.query.category;
-  const subCategory = context.query["sub-category"] || "";
-  const filter = { group, category };
-  if (subCategory !== "") {
-    filter["sub-category"] = subCategory;
+export async function getStaticProps(context) {
+  const [group, category, subCategory] = context.params.slug;
+
+  const data = await getDataFromMongoDB({ group, category, subCategory });
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
   }
-
-  console.log(filter);
-
-  const data = await getDataFromMongoDB(filter);
-
-  // Object.keys(data).forEach((key) => {
-  //   products.push({ ...data[key] });
-  // });
 
   return {
     props: {
+      group,
       category,
-      subCategory,
-      filter,
+      subCategory: subCategory || "",
       data: JSON.stringify(data),
     },
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      {
+        params: {
+          slug: ["men", "western-wear"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "western-wear", "shirts"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "western-wear", "jackets&coats"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "ethnic&festive"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "ethnic&festive", "kurtas&shirts"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "footwear"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "footwear", "casual-shoes"],
+        },
+      },
+      {
+        params: {
+          slug: ["men", "footwear", "formal-shoes"],
+        },
+      },
+    ],
+    fallback: false,
   };
 }
 

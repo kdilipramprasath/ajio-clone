@@ -4,7 +4,10 @@ import { useDispatch } from "react-redux";
 
 import { cartActions } from "../../../store/index";
 
-import { getDataFromMongoDB } from "../../../utilities/fetch-data";
+import {
+  getProductDetails,
+  getProductIds,
+} from "../../../utilities/fetch-data";
 
 import { ObjectId } from "mongodb";
 
@@ -27,7 +30,7 @@ import SelectColor from "../../../components/products/select-color";
 
 const ProductDetailsPage = (props) => {
   const dispatch = useDispatch();
-  const product = JSON.parse(props.data)[0];
+  const product = JSON.parse(props.data);
   // console.log(product["product-details"]["common-details"]);
   // return <div></div>;
   const {
@@ -37,7 +40,7 @@ const ProductDetailsPage = (props) => {
     description,
     price,
     discount: offer,
-  } = JSON.parse(props.data)[0];
+  } = JSON.parse(props.data);
   const firstColor = Object.keys(colors)[0];
   const [currentColor, setCurrentColor] = useState(firstColor);
   const firstImage = colors[currentColor]["images"][0];
@@ -66,9 +69,9 @@ const ProductDetailsPage = (props) => {
     Commodity: <span className="capitalize">{product["sub-category"]}</span>,
   };
 
-  const productSpecificDetails = Object.keys(
-    product["product-details"]
-  ).filter((key) => Array.isArray(product["product-details"][key]) !== true);
+  const productSpecificDetails = Object.keys(product["product-details"]).filter(
+    (key) => Array.isArray(product["product-details"][key]) !== true
+  );
   for (const key of productSpecificDetails) {
     productDetails[key] = product["product-details"][key];
   }
@@ -308,17 +311,29 @@ const ProductDetailsPage = (props) => {
   );
 };
 
-export async function getServerSideProps(context) {
-  const group = context.query.group;
-  const productId = context.query.productId;
-  const data = await getDataFromMongoDB({ _id: ObjectId(productId), group });
-
-  console.log(data);
+export async function getStaticProps(context) {
+  const group = context.params.group;
+  const productId = context.params.productId;
+  const data = await getProductDetails({ _id: ObjectId(productId), group });
 
   return {
     props: {
       data: JSON.stringify(data),
     },
+  };
+}
+
+export async function getStaticPaths() {
+  const ids = await getProductIds();
+  console.log("IDS: " + ids);
+  const paths = ids.map((id) => {
+    const fixedId = JSON.parse(JSON.stringify(id._id));
+    return { params: { group: "men", productId: fixedId } };
+  });
+  console.log(paths);
+  return {
+    paths,
+    fallback: false,
   };
 }
 

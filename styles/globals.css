@@ -2,6 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: Oswald;
+    src: url("/fonts/Oswald/static/Oswald-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-Thin.ttf") format("truetype");
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-Light.ttf") format("truetype");
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Jost;
+    src: url("/fonts/Jost/static/Jost-SemiBold.ttf") format("truetype");
+    font-weight: 500;
+  }
+}
+
 .show-block {
   display: block;
 }
@@ -10,32 +54,12 @@
   font-weight: bold;
 }
 
-.text-primary {
-  color: #2f4254;
-}
-
-.bg-primary {
-  background-color: #2f4254;
-}
-
-.text-ajio-yellow {
-  color: #d5a249;
-}
-
-.bg-ajio-yellow {
-  background-color: #d5a249;
-}
-
-.border-ajio-yellow {
-  border-color: #d5a249;
-}
-
 .product-detail:hover {
   background-color: #d5a249;
 }
 
 .add-to-bag {
-padding: .7rem 0;
+  padding: 0.7rem 0;
 }
 
 .inner-border {
@@ -92,5 +116,5 @@ padding: .7rem 0;
 }
 
 .text-xss {
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
